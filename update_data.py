@@ -141,6 +141,7 @@ if __name__ == '__main__':
         if prevBibTime != currentBibTime:
             print("detected change in bib file")
             update()
+            
             prevBibTime = currentBibTime
         else:
             print("waiting for changes in bib file: " + BIB_FILE)
